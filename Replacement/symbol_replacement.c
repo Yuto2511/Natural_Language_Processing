@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<ctype.h>
 
 int main()
 {
 	FILE * fp1 = NULL;
 	FILE * fp2 = NULL;
-	char fname1[16];
-	char fname2[16] = "revise_";
+	char fname1[128];
+	char fname2[128] = "revise_";
 	char ch;
 
 	//ファイル名入力
@@ -27,11 +28,7 @@ int main()
 
 	//記号置換
 	while( (ch = fgetc(fp1)) != EOF ){
-		if( (ch >= 0x21 && ch <= 0x40)
-			|| (ch >= 0x5b && ch <= 0x60)
-			|| (ch >= 0x7b && ch <= 0x7e)){
-			fputc(0x20, fp2);
-		}
+		if( !isalpha(ch) )fputc(0x20, fp2);
 		else fputc(ch, fp2);
 		
 	}
