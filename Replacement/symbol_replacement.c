@@ -28,7 +28,8 @@ int main()
 
 	//記号置換
 	while( (ch = fgetc(fp1)) != EOF ){
-		if( !isalpha(ch) )fputc(0x20, fp2);
+		if( ch == 0x0A ) fprintf(fp2, "\n");
+		else if( !isalpha(ch) ) fputc(0x20, fp2);
 		else fputc(ch, fp2);
 		
 	}
