@@ -40,7 +40,7 @@ int main()
 
 	srand((unsigned int)time(NULL));
 
-	for(int j = 0; j < 100; j++){
+	for(int j = 0; j < 200; j++){
 		k = 0 + (int)( rand() * (max + 1.0) / (1.0 + RAND_MAX) );
 		fprintf(fp2, "%c", alphabet[k]);
 	}

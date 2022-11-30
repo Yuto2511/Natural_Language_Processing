@@ -1,1 +1,12 @@
-                                ABCDEFGHIJKLMNOPQRSTUVWXYZ      abcdefghijklmnopqrstuvwxyz     
+The STM  F   xx and STM  F   xx family is based on the high performance Arm  
+Cortex   M     bit RISC core operating at a frequency of up to     MHz  The Cortex M 
+core features a Floating point unit  FPU  single precision which supports all Arm singleprecision data processing instructions and data types  It also implements a full set of DSP
+instructions and a memory protection unit  MPU  which enhances application security 
+The STM  F   xx and STM  F   xx family incorporates high speed embedded
+memories  Flash memory up to   Mbyte  up to     Kbytes of SRAM   up to   Kbytes of
+backup SRAM  and an extensive range of enhanced I Os and peripherals connected to two
+APB buses  three AHB buses and a    bit multi AHB bus matrix 
+All devices offer three    bit ADCs  two DACs  a low power RTC  twelve general purpose
+   bit timers including two PWM timers for motor control  two general purpose    bit timers 
+a true random number generator  RNG   They also feature standard and advanced
+communication interfaces

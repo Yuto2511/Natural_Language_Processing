@@ -1,1 +1,12 @@
-!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+The STM32F405xx and STM32F407xx family is based on the high-performance Arm®
+Cortex®-M4 32-bit RISC core operating at a frequency of up to 168 MHz. The Cortex-M4
+core features a Floating point unit (FPU) single precision which supports all Arm singleprecision data-processing instructions and data types. It also implements a full set of DSP
+instructions and a memory protection unit (MPU) which enhances application security.
+The STM32F405xx and STM32F407xx family incorporates high-speed embedded
+memories (Flash memory up to 1 Mbyte, up to 192 Kbytes of SRAM), up to 4 Kbytes of
+backup SRAM, and an extensive range of enhanced I/Os and peripherals connected to two
+APB buses, three AHB buses and a 32-bit multi-AHB bus matrix.
+All devices offer three 12-bit ADCs, two DACs, a low-power RTC, twelve general-purpose
+16-bit timers including two PWM timers for motor control, two general-purpose 32-bit timers.
+a true random number generator (RNG). They also feature standard and advanced
+communication interfaces
