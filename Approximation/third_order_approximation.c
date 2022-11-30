@@ -8,11 +8,11 @@ int main()
 	FILE *fp1 = NULL;
 	FILE *fp2 = NULL;
 	char fname1[64] = "fairy_tales.txt";
-	char fname2[64] = "1_approximation_txt.txt";
+	char fname2[64] = "3_approximation_txt.txt";
 
 	int ch;
 	int *alphabet;
-	int max = 0, i = 0, k;
+	int max = 0, i = 0, k, a, b;
 
 	//printf("input a file name\n");
 	//scanf("%s", fname1);
@@ -40,9 +40,28 @@ int main()
 
 	srand((unsigned int)time(NULL));
 
+	k = 0 + (int)( rand() * (max + 1.0) / (1.0 + RAND_MAX) );
+	fprintf(fp2, "%c%c", alphabet[k], alphabet[k+1]);
+	a = k + 1;
+	b = k + 2;
 	for(int j = 0; j < 100; j++){
 		k = 0 + (int)( rand() * (max + 1.0) / (1.0 + RAND_MAX) );
-		fprintf(fp2, "%c", alphabet[k]);
+		while(1){
+			k++;
+			if(alphabet[k] == alphabet[a]){
+				a = k + 1;
+				break;
+			}
+		}
+		while(1){
+			a++;
+			if(alphabet[a] == alphabet[b]){
+				b = a + 1;
+				break;
+			}
+
+		}
+		fprintf(fp2, "%c", alphabet[b]);
 	}
 
 	free(alphabet);
